@@ -11,3 +11,4 @@ const sum=arr.reduce((acc,el)=>acc+el,0);
 
 const foundNumber=arr.find(el=>el===8);
 console.log(foundNumber);
+
