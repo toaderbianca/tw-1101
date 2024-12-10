@@ -15,8 +15,24 @@ const arrLogger2=async (message)=>{
 }
 
 //logger('astazi');
-logger2('maine')
-logger('azi')
+//logger2('maine')
+//logger('azi')
 
-arrLogger('luni');
-arrLogger2('marti');
+//arrLogger('luni');
+//arrLogger2('marti');
+
+async function f() {
+    try{
+        let promise=new Promise((resolve,reject)=>{
+            setTimeout(()=>reject(new Error('error msj')),1000)
+        });
+
+        let result=await promise;
+        console.log(result);
+    }catch(error){
+        console.log(error)
+    }
+}
+
+f()
+console.log(2)
